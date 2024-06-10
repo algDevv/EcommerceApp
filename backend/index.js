@@ -78,7 +78,7 @@ const Product = mongoose.model("Product", {
   },
 });
 
-// creating api for add products
+// creating api for add products in admin panel
 
 app.post("/addproduct", async (req, res) => {
   let products = await Product.find({});
